@@ -19,13 +19,14 @@ namespace Uzdevumi
                 Console.WriteLine("\t" + "2- Atņemšana");
                 Console.WriteLine("\t" + "3- Reizināšana");
                 Console.WriteLine("\t" + "4- Dalīšana");
+                Console.WriteLine("\t" + "5- Kāpināšana");
+
 
                 Console.WriteLine("\t" + "0- Iziet\n");
 
                 string input = Console.ReadLine();
                 izvele = Convert.ToInt16(input);
-                //int rezult = Funkcija1();
-                //Console.WriteLine(rezult);
+               
 
                 switch (izvele)
                 {
@@ -45,6 +46,10 @@ namespace Uzdevumi
                     case 4:
                         double c4 = RZ.Funkcija4();
                         Console.WriteLine("\t Iznākums = " + c4);
+                        break;
+                    case 5:
+                        RZ.Funkcija5();
+                        Console.WriteLine("\t Iznākums = ");
                         break;
 
                     default:
